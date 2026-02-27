@@ -1,13 +1,24 @@
 {
   "name": "@dittopedia/shared",
   "version": "1.0.0",
-  "module": "src/index.ts",
   "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "private": false,
   "exports": {
-    ".": "./src/index.ts",
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
     "./eslint-preset": "./eslint-preset.mjs",
     "./prettier-preset": "./prettier-preset.json"
+  },
+  "files": ["dist", "eslint-preset.mjs", "prettier-preset.json"],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "prepublishOnly": "tsc"
   },
   "dependencies": {
     "@eslint/js": "^9.18.0",
