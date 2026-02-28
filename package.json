@@ -1,6 +1,6 @@
 {
   "name": "@dittopedia/shared",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "type": "module",
   "main": "./dist/index.js",
   "module": "./dist/index.js",
@@ -14,7 +14,11 @@
     "./eslint-preset": "./eslint-preset.mjs",
     "./prettier-preset": "./prettier-preset.json"
   },
-  "files": ["dist", "eslint-preset.mjs", "prettier-preset.json"],
+  "files": [
+    "dist",
+    "eslint-preset.mjs",
+    "prettier-preset.json"
+  ],
   "scripts": {
     "build": "tsc",
     "dev": "tsc --watch",
