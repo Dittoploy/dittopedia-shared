@@ -1,5 +1,5 @@
 // --- 2. TYPES API (Requêtes / Réponses) ---
-export interface ApiResponse<T> {
+export interface IApiResponse<T> {
   success: boolean;
   data?: T;
   error?: string;
@@ -7,7 +7,7 @@ export interface ApiResponse<T> {
 }
 
 // --- 3. CONSTANTES DE CONFIGURATION ---
-export const API_CONFIG = {
+export const IAPI_CONFIG = {
   VERSION: 'v1',
   DEFAULT_PORT: 3000,
   TIMEOUT: 5000

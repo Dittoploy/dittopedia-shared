@@ -1,5 +1,5 @@
 // --- 1. TYPES UTILISATEUR ---
-export interface UserDTO {
+export interface IUserDTO {
   id: string;
   username: string;
   email: string;
