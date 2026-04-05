@@ -7,7 +7,7 @@ export interface IApiResponse<T> {
 }
 
 // --- 3. CONSTANTES DE CONFIGURATION ---
-export const IAPI_CONFIG = {
+export const API_CONFIG = {
   VERSION: 'v1',
   DEFAULT_PORT: 3000,
   TIMEOUT: 5000
